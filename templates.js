@@ -9,9 +9,10 @@ function getPhotoTemplate(index) {
 
 /** HTML für Overlay */
 function getOverlayTemplate(index) {
-    return `<img class="overlay_photo"
-                 src="./img/${photos[index]}"
-                 alt="Foto ${index + 1}">`;
-
-
+    return `<div class="overlay_content" onclick="event.stopPropagation()">
+                <button onclick="closeOverlay()">X</button>
+                <img class="overlay_photo"
+                     src="./img/${photos[index]}"
+                     alt="Foto ${index + 1}">
+            </div>`;
 }
