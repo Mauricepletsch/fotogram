@@ -8,16 +8,22 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgba(6, 23, 30, 1);
- 
+
 }
 
 /* Header */
 header {
-    padding: 16px;
+    padding: 20px 0;
     background-color: rgba(9, 33, 42, 1);
     color: white;
-    text-align: center;
     width: 100%;
+
+}
+
+/* Content */
+.content {
+    max-width: 1440px;
+    margin: 0 auto;
 
 }
 
@@ -62,4 +68,3 @@ header {
     color: white;
     background-color: rgba(9, 33, 42, 1);
 }
- 
