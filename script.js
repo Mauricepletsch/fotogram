@@ -29,3 +29,9 @@ function openOverlay(index) {
     overlay.innerHTML = getOverlayTemplate(index);
     overlay.classList.remove("d_none");
 }
+
+/** Close Overlay */
+function closeOverlay() {
+    let overlay = document.getElementById("overlay");
+    overlay.classList.add("d_none");
+}
