@@ -21,7 +21,20 @@
         <h1 class="headline">Your personal photo album</h1>
         <section id="gallery" class="gallery content"></section>
 
-        <div id="overlay" class="overlay d_none" onclick="closeOverlay()"></div>
+        <div id="overlay" class="overlay d_none" onclick="closeOverlay()">
+    <div class="overlay_content" onclick="event.stopPropagation()">
+        <div class="overlay_header">
+            <h2 id="overlay_title" class="overlay_title"></h2>
+            <button class="overlay_close" onclick="closeOverlay()">X</button>
+        </div>
+        <img id="overlay_photo" class="overlay_photo" src="" alt="">
+        <div class="overlay_buttons">
+            <button>←</button>
+            <p id="overlay_counter"></p>
+            <button>→</button>
+        </div>
+    </div>
+</div>
     </main>
 
     <footer class="footer">
