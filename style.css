@@ -1,5 +1,6 @@
-h1 {
+* {
     margin: 0;
+    padding: 0;
 }
 
 
@@ -22,8 +23,17 @@ header {
 
 /* Headline */
 .headline {
+    font-family: "Figtree", sans-serif;
+    Font-weight: 800;
+    font-size: 56px;
+    line-height: 100%;
     color: white;
     text-align: center;
+    margin-bottom: 160px;
+ 
+}
+main {
+    padding: 160px 0;
 }
 
 /* Content und Begrenzung */
@@ -39,14 +49,17 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
-    padding: 24px;
+    max-width: 1170px;
 }
 
 .gallery_photo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 16px;
+    border: 2px solid rgba(18, 70, 88, 1);
+    box-sizing: border-box;
+
 }
 
 /* Overlay */
