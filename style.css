@@ -88,6 +88,19 @@ main {
     border-radius: 40px;
 }
 
+.overlay_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay_photo {
+    width: 560px;
+    height: 374px;
+object-fit: cover;
+   
+}
+
 /* Hilfsklassen */
 .d_none {
     display: none;

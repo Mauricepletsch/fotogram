@@ -25,10 +25,13 @@ function render() {
 
 /** Öffnet Overlay mit klick auf Foto */
 function openOverlay(index) {
-    let overlay = document.getElementById("overlay");
-    overlay.innerHTML = getOverlayTemplate(index);
-    overlay.classList.remove("d_none");
+    document.getElementById("overlay_title").innerHTML = photos[index];
+    document.getElementById("overlay_photo").src = "./img/" + photos[index];
+    document.getElementById("overlay_photo").alt = "Foto " + (index + 1);
+    document.getElementById("overlay_counter").innerHTML = (index + 1) + "/" + photos.length;
+    document.getElementById("overlay").classList.remove("d_none");
 }
+
 
 /** Close Overlay */
 function closeOverlay() {
