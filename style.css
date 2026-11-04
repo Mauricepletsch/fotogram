@@ -20,6 +20,12 @@ header {
 
 }
 
+/* Headline */
+.headline {
+    color: white;
+    text-align: center;
+}
+
 /* Content und Begrenzung */
 .content {
     max-width: 1440px;
