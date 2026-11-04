@@ -6,7 +6,7 @@
 
 /* Basis */
 body {
-    margin: 0;
+
     font-family: Arial, sans-serif;
     background-color: rgba(6, 23, 30, 1);
 
@@ -17,14 +17,14 @@ header {
     padding: 20px 0;
     background-color: rgba(9, 33, 42, 1);
     color: white;
-    width: 100%;
+
 
 }
 
 /* Headline */
 .headline {
     font-family: "Figtree", sans-serif;
-    Font-weight: 800;
+    font-weight: 800;
     font-size: 56px;
     line-height: 100%;
     color: white;
@@ -32,6 +32,8 @@ header {
     margin-bottom: 160px;
  
 }
+
+/* Main */
 main {
     padding: 160px 0;
 }
@@ -48,7 +50,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 48px 16px;
     max-width: 1170px;
 }
 
@@ -61,6 +63,7 @@ main {
     box-sizing: border-box;
 
 }
+
 
 /* Overlay */
 .overlay {
@@ -75,17 +78,42 @@ main {
     align-items: center;
 }
 
+
+.overlay_content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+   padding: 56px 64px;
+    background-color: rgba(9, 33, 42, 1);
+    border-radius: 40px;
+}
+
 /* Hilfsklassen */
 .d_none {
     display: none;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 128px;
-    color: white;
+color: white;
+    background-size: 100% 100%;
     background-image: url("./img/icons/footer.png");
     background-color: rgba(9, 33, 42, 1);
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 31.5px;
+
+}
+
+.footer_text {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(153, 172, 179, 1);
 }
