@@ -52,6 +52,9 @@ header {
 
 
 }
+.logo {
+    display: block;
+}
 
 /* Headline */
 .headline {
@@ -176,7 +179,6 @@ main {
     color: white;
     background-size: 100% 100%;
     background-image: url("./img/icons/footer.png");
-    background-color: rgba(9, 33, 42, 1);
 }
 
 .footer_content {
@@ -194,4 +196,37 @@ main {
     font-size: 14px;
     line-height: 100%;
     color: rgba(153, 172, 179, 1);
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 40px 16px;
+    }
+
+    .headline {
+        font-size: 48px;
+    }
+       .overlay_content {
+        width: 343px;
+        padding: 32px 16px;
+        box-sizing: border-box;
+    }
+
+       .overlay_photo {
+        width: 300px;
+        height: 375px;
+        align-self: center;
+    }
+        .gallery {
+        gap: 16px;
+        padding-bottom: 56px;
+    }
+
+    .footer {
+        height: 103px;
+    }
+
+    .footer_content {
+        padding-top: 26.5px;
+    }
 }
