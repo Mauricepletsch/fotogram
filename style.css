@@ -108,6 +108,17 @@ main {
     gap: 56px;
 }
 
+.overlay_close, .overlay_arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay_title, .overlay_counter {
+    color: white;
+}
+
+
 .d_none {
     display: none;
 }

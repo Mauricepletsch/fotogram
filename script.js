@@ -50,7 +50,7 @@ function previousPhoto() {
     if (openedIndex < 0) {
         openedIndex = photos.length - 1;
     }
-    openOverlay(currentIndex);
+    openOverlay(openedIndex);
 }
 
 /** Close Overlay */
