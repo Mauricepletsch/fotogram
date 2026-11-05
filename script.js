@@ -13,6 +13,8 @@ let photos = [
     "winter.webp"
 ];
 
+let openedPhotoIndex = 0;
+
 /** Anzeige Fotos Liste */
 function render() {
     let gallery = document.getElementById("gallery");
@@ -25,6 +27,7 @@ function render() {
 
 /** Öffnet Overlay mit klick auf Foto */
 function openOverlay(index) {
+    openedIndex = index;
     document.getElementById("overlay_title").innerHTML = photos[index];
     document.getElementById("overlay_photo").src = "./img/" + photos[index];
     document.getElementById("overlay_photo").alt = "Foto " + (index + 1);
@@ -32,6 +35,23 @@ function openOverlay(index) {
     document.getElementById("overlay").classList.remove("d_none");
 }
 
+/** Nächstes Foto */
+function nextPhoto() {
+    openedIndex++;
+    if (openedIndex >= photos.length) {
+        openedIndex = 0;
+    }
+    openOverlay(openedIndex);
+}
+
+/** Vorheriges Foto */
+function previousPhoto() {
+    openedIndex--;
+    if (openedIndex < 0) {
+        openedIndex = photos.length - 1;
+    }
+    openOverlay(currentIndex);
+}
 
 /** Close Overlay */
 function closeOverlay() {
