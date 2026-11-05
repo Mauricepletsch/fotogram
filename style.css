@@ -114,7 +114,15 @@ main {
     cursor: pointer;
 }
 
-.overlay_title, .overlay_counter {
+.overlay_counter {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(245, 245, 245, 1);
+}
+
+.overlay_title{
     color: white;
 }
 
