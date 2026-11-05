@@ -1,3 +1,35 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/figtree-v9-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/figtree-v9-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/figtree-v9-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./fonts/figtree-v9-latin-800.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -122,10 +154,18 @@ main {
     color: rgba(245, 245, 245, 1);
 }
 
-.overlay_title{
-    color: white;
+.overlay_title {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
 }
 
+.overlay_arrow:hover,
+.overlay_close:hover {
+    filter: brightness(0.7);
+}
 
 .d_none {
     display: none;
