@@ -22,7 +22,7 @@
         <section id="gallery" class="gallery content"></section>
 
         <div id="overlay" class="overlay d_none" onclick="closeOverlay()">
-            <div class="overlay_content" onclick="event.stopPropagation()">
+                        <div class="overlay_content" onclick="event.stopPropagation()" role="dialog" aria-modal="true" aria-labelledby="overlay_title">
                 <div class="overlay_header">
                     <h2 id="overlay_title" class="overlay_title"></h2>
                     <button class="overlay_close" onclick="closeOverlay()">

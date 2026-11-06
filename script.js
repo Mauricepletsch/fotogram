@@ -13,7 +13,7 @@ let photos = [
     "winter.webp"
 ];
 
-let openedPhotoIndex = 0;
+let openedIndex = 0;
 
 /** Anzeige Fotos Liste */
 function render() {
@@ -57,4 +57,10 @@ function previousPhoto() {
 function closeOverlay() {
     let overlay = document.getElementById("overlay");
     overlay.classList.add("d_none");
+}
+
+
+function openFromGallery(index) {
+    openOverlay(index);
+    document.getElementById("overlay_close").focus();
 }

@@ -89,6 +89,12 @@ main {
     max-width: 1170px;
 }
 
+.gallery_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .gallery_photo {
     width: 150px;
     height: 150px;
